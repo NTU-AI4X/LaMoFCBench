@@ -1,6 +1,6 @@
-# LMFCBench
+# LaMoFCBench
 
-LMFCBench is a benchmark and evaluation toolkit for universal feature coding across multiple large-model modalities.
+LaMoFCBench is a benchmark and evaluation toolkit for universal feature coding across multiple large-model modalities.
 
 ## 1. Project Overview
 
@@ -23,7 +23,7 @@ Core directories:
 
 All hosted resources are under:
 
-- <https://www.modelscope.cn/collections/yooweey/LMFCBench>
+- <https://www.modelscope.cn/collections/yooweey/LaMoFCBench>
 
 Main datasets:
 
