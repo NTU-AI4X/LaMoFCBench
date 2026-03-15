@@ -1,0 +1,62 @@
+{
+    "dinov3-total": {
+        "layer.9": "dinov3_total/dep_fewshot-8bit_layer_9_0.json",
+        "layer.19": "dinov3_total/dep_fewshot-8bit_layer_19_0.json",
+        "layer.29": "dinov3_total/dep_fewshot-8bit_layer_29_0.json",
+        "layer.39": "dinov3_total/dep_fewshot-8bit_layer_39_0.json"
+    },
+    "falconmamba": {
+        "layer.0.conv_state": "falconmamba/arc_fewshot-8bit_layer_0_conv.json",
+        "layer.0.ssm_state": "falconmamba/arc_fewshot-8bit_layer_0_ssm.json",
+        "layer.1.conv_state": "falconmamba/arc_fewshot-8bit_layer_1_conv.json",
+        "layer.1.ssm_state": "falconmamba/arc_fewshot-8bit_layer_1_ssm.json",
+        "layer.2.conv_state": "falconmamba/arc_fewshot-8bit_layer_2_conv.json",
+        "layer.2.ssm_state": "falconmamba/arc_fewshot-8bit_layer_2_ssm.json",
+        "layer.3.conv_state": "falconmamba/arc_fewshot-8bit_layer_3_conv.json",
+        "layer.3.ssm_state": "falconmamba/arc_fewshot-8bit_layer_3_ssm.json",
+        "layer.4.conv_state": "falconmamba/arc_fewshot-8bit_layer_4_conv.json",
+        "layer.4.ssm_state": "falconmamba/arc_fewshot-8bit_layer_4_ssm.json",
+        "layer.4.output": "falconmamba/arc_fewshot-8bit_output.json"
+    },
+    "qwen": {
+        "layer.0.k_cache": "qwen3/arc_fewshot-8bit_layer_0_k.json",
+        "layer.0.v_cache": "qwen3/arc_fewshot-8bit_layer_0_v.json",
+        "layer.1.k_cache": "qwen3/arc_fewshot-8bit_layer_1_k.json",
+        "layer.1.v_cache": "qwen3/arc_fewshot-8bit_layer_1_v.json",
+        "layer.2.k_cache": "qwen3/arc_fewshot-8bit_layer_2_k.json",
+        "layer.2.v_cache": "qwen3/arc_fewshot-8bit_layer_2_v.json",
+        "layer.3.k_cache": "qwen3/arc_fewshot-8bit_layer_3_k.json",
+        "layer.3.v_cache": "qwen3/arc_fewshot-8bit_layer_3_v.json",
+        "layer.4.k_cache": "qwen3/arc_fewshot-8bit_layer_4_k.json",
+        "layer.4.v_cache": "qwen3/arc_fewshot-8bit_layer_4_v.json",
+        "layer.4.output": "qwen3/arc_fewshot-8bit_feature.json"
+    },
+    "kimiaudio": {
+        "output": "kimiaudio/librispeech_fewshot-8bit_feature.json",
+        "layer.0.k_cache": "kimiaudio/librispeech_fewshot-8bit_layer_0_k.json",
+        "layer.0.v_cache": "kimiaudio/librispeech_fewshot-8bit_layer_0_v.json",
+        "layer.1.k_cache": "kimiaudio/librispeech_fewshot-8bit_layer_1_k.json",
+        "layer.1.v_cache": "kimiaudio/librispeech_fewshot-8bit_layer_1_v.json",
+        "layer.2.k_cache": "kimiaudio/librispeech_fewshot-8bit_layer_2_k.json",
+        "layer.2.v_cache": "kimiaudio/librispeech_fewshot-8bit_layer_2_v.json",
+        "layer.3.k_cache": "kimiaudio/librispeech_fewshot-8bit_layer_3_k.json",
+        "layer.3.v_cache": "kimiaudio/librispeech_fewshot-8bit_layer_3_v.json",
+        "layer.4.k_cache": "kimiaudio/librispeech_fewshot-8bit_layer_4_k.json",
+        "layer.4.v_cache": "kimiaudio/librispeech_fewshot-8bit_layer_4_v.json"
+    },
+    "sd35": {
+        "text_encoder-item0.clip_pooled_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder-item0_clip_pooled_prompt_embeds.json",
+        "text_encoder-item0.clip_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder-item0_clip_prompt_embeds.json",
+        "text_encoder-item3.clip_pooled_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder-item3_clip_pooled_prompt_embeds.json",
+        "text_encoder-item3.clip_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder-item3_clip_prompt_embeds.json",
+        "text_encoder_2-item1.clip_pooled_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder_2-item1_clip_pooled_prompt_embeds.json",
+        "text_encoder_2-item1.clip_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder_2-item1_clip_prompt_embeds.json",
+        "text_encoder_2-item4.clip_pooled": "sd35cond/coco_fewshot-8bit_text_encoder_2-item4_clip_pooled_prompt_embeds.json",
+        "text_encoder_2-item4.clip_prompt": "sd35cond/coco_fewshot-8bit_text_encoder_2-item4_clip_prompt_embeds.json",
+        "text_encoder_3-item2.t5_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder_3-item2_t5_prompt_embeds.json",
+        "text_encoder_3-item5.t5_prompt_embeds": "sd35cond/coco_fewshot-8bit_text_encoder_3-item5_t5_prompt_embeds.json",
+        "vae.encoder_f0": "sd35cond/coco_fewshot-8bit_vae_encoder_vae_encoder_f0.json",
+        "vae.encoder_f1": "sd35cond/coco_fewshot-8bit_vae_encoder_vae_encoder_f1.json",
+        "vae.decoder": "sd35cond/coco_fewshot-8bit_vae_decoder.json"
+    }
+}

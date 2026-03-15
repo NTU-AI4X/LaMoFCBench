@@ -1,0 +1,32 @@
+task: fc_winogrande
+dataset_path: winogrande
+dataset_name: winogrande_xl
+output_type: generate_until
+training_split: train
+validation_split: validation
+fewshot_split: train
+process_docs: !function utils.process_docs_winogrande
+doc_to_text: "Fill in the blank (_) with the best option.\nSentence: {{sentence}}\nA. {{option1}}\nB. {{option2}}\nYour response should end with \"The best answer is [the_answer_letter]\" where the [the_answer_letter] is A or B."
+gen_prefix: "The best answer is"
+fewshot_delimiter: "\n\n"
+doc_to_target: "{{ 'AB'[answer | int - 1] }}"
+num_fewshot: 0
+generation_kwargs:
+  max_gen_toks: 100
+  until:
+    - "\n\n"
+    - "."
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+filter_list:
+  - name: get_answer
+    filter:
+      - function: regex
+        regex_pattern: "(?:\\[the_answer_letter\\]\\s*(?:is\\s*)?)?\\[?([AB])\\]?"
+      - function: take_first
+metadata:
+  version: 1.0

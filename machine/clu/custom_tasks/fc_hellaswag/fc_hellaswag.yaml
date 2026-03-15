@@ -1,0 +1,35 @@
+tag:
+  - hellaswag
+task: fc_hellaswag
+dataset_path: Rowan/hellaswag
+dataset_name: null
+output_type: generate_until
+training_split: train
+validation_split: validation
+test_split: null
+fewshot_split: train
+process_docs: !function utils.process_docs_hellaswag
+doc_to_text: "Given a context and four possible endings (A, B, C and D), choose the most plausible ending.\nContext: {{ctx}}\nA. {{endings_clean[0]}}\nB. {{endings_clean[1]}}\nC. {{endings_clean[2]}}\nD. {{endings_clean[3]}}\nYour response should end with \"The best answer is [the_answer_letter]\" where the [the_answer_letter] is one of A, B, C or D."
+gen_prefix: "The best answer is"
+fewshot_delimiter: "\n\n"
+doc_to_target: "{{['A', 'B', 'C', 'D'][label | int]}}"
+num_fewshot: 0
+generation_kwargs:
+  max_gen_toks: 100
+  until:
+    - "\n\n"
+    - "."
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+filter_list:
+  - name: get_answer
+    filter:
+      - function: regex
+        regex_pattern: "(?:\\[the_answer_letter\\]\\s*(?:is\\s*)?)?\\[?([A-D])\\]?"
+      - function: take_first
+metadata:
+  version: 1.0
