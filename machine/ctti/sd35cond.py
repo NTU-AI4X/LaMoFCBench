@@ -327,8 +327,8 @@ class SD3CtrlNetFeatureCodingPipeline:
                     self.sample_mse_msg.append([f"{real_key}.vae.encoder_f0", f"{_mse_sum / _numel:.8f}"])
 
                     _loaded_f1 = self.current_target_features[real_key]["vae.encoder_f1"]
-                    _loaded_f1 = load_tensor_using_ref(_loaded_f1, ref=outputs[0])
-                    _mse_sum = compute_mse(_loaded_f1, outputs[0])
+                    _loaded_f1 = load_tensor_using_ref(_loaded_f1, ref=outputs[1])
+                    _mse_sum = compute_mse(_loaded_f1, outputs[1])
                     self.total_mse_sum += _mse_sum
                     _numel = _loaded_f1.numel()
                     self.total_numel += _numel

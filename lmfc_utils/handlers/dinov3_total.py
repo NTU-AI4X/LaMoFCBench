@@ -174,6 +174,7 @@ class DINOv3TotalHandler(BaseHandler):
         restored = {}
         for layer_name in sorted(set(features.layer_names), key=lambda x: int(x.split(".")[-1])):
             batch_combined = []
+            # NOTE: 当前选择的样本不会超过3，所以可以兼容，但对于更通用的场景是潜在的隐患
             for item_idx in range(3):  # Check up to 3 samples
                 if f"{layer_name}.{item_idx}" not in features.layer_features:
                     continue
