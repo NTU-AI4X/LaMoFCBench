@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
+  <title id="title">LaMoFCBench logo</title>
+  <desc id="desc">A multimodal feature coding benchmark logo with feature streams entering a codec core.</desc>
+  <defs>
+    <linearGradient id="coreGradient" x1="155" y1="64" x2="292" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2bd4bd"/>
+      <stop offset="0.52" stop-color="#4f7cff"/>
+      <stop offset="1" stop-color="#8157d9"/>
+    </linearGradient>
+    <linearGradient id="wordGradient" x1="344" y1="85" x2="780" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12344d"/>
+      <stop offset="0.58" stop-color="#2856c8"/>
+      <stop offset="1" stop-color="#6c47b8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#12344d" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="260" rx="34" fill="#f7fbff"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M220 44 304 92v76l-84 48-84-48V92z" fill="url(#coreGradient)"/>
+    <path d="M220 69 282 104v53l-62 35-62-35v-53z" fill="#ffffff" opacity="0.18"/>
+    <path d="M181 104h78v20h-56v13h45v20h-45v31h-22z" fill="#ffffff"/>
+    <path d="M250 137h28v20h-28z" fill="#ffffff"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+    <path d="M52 76h74c20 0 34 8 48 24" stroke="#f05f57"/>
+    <path d="M52 118h82c18 0 29 4 43 14" stroke="#36b37e"/>
+    <path d="M52 160h74c20 0 34-8 48-24" stroke="#3aa6ff"/>
+    <path d="M300 100c24-18 48-24 82-24h32" stroke="#f05f57"/>
+    <path d="M304 130h111" stroke="#36b37e"/>
+    <path d="M300 160c24 18 48 24 82 24h32" stroke="#3aa6ff"/>
+  </g>
+
+  <g>
+    <circle cx="52" cy="76" r="16" fill="#fff" stroke="#f05f57" stroke-width="6"/>
+    <path d="M45 76h14M52 69v14" stroke="#f05f57" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="52" cy="118" r="16" fill="#fff" stroke="#36b37e" stroke-width="6"/>
+    <path d="M43 119c5-8 13-8 18 0" stroke="#36b37e" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <circle cx="47" cy="112" r="2.8" fill="#36b37e"/>
+    <circle cx="57" cy="112" r="2.8" fill="#36b37e"/>
+
+    <circle cx="52" cy="160" r="16" fill="#fff" stroke="#3aa6ff" stroke-width="6"/>
+    <path d="M43 166h18M46 158l4-6 5 9 3-5 4 10" stroke="#3aa6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <circle cx="414" cy="76" r="11" fill="#f05f57"/>
+    <rect x="401" y="117" width="26" height="26" rx="5" fill="#36b37e"/>
+    <path d="M414 174 428 198h-28z" fill="#3aa6ff"/>
+  </g>
+
+  <g>
+    <text x="454" y="123" fill="url(#wordGradient)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="0">LaMoFCBench</text>
+    <text x="458" y="164" fill="#4d657a" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="0">Large Model Feature Coding Benchmark</text>
+  </g>
+
+  <g fill="#c5d2df">
+    <rect x="458" y="188" width="48" height="10" rx="5"/>
+    <rect x="518" y="188" width="22" height="10" rx="5"/>
+    <rect x="552" y="188" width="70" height="10" rx="5"/>
+    <rect x="634" y="188" width="34" height="10" rx="5"/>
+    <rect x="680" y="188" width="58" height="10" rx="5"/>
+  </g>
+</svg>

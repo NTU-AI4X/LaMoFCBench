@@ -1,4 +1,6 @@
-# LaMoFCBench
+<p align="center">
+  <img src="assets/lamofcbench-logo.svg" alt="LaMoFCBench logo" width="760">
+</p>
 
 LaMoFCBench is a benchmark and evaluation toolkit for universal large model feature coding across multiple modalities.
 
