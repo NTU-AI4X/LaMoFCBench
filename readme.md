@@ -1,5 +1,8 @@
 <p align="center">
   <img src="assets/lamofcbench-logo.svg" alt="LaMoFCBench logo" width="760">
+  <br />
+  <a href="https://arxiv.org/abs/2605.24025"><img src="https://img.shields.io/badge/arXiv-2605.24025-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://www.modelscope.cn/collections/yooweey/LaMoFCBench"><img src="https://img.shields.io/badge/Data-ModelScope-624AFF.svg" alt="ModelScope data"></a>
 </p>
 
 LaMoFCBench is a benchmark and evaluation toolkit for universal large model feature coding across multiple modalities.
